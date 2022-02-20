@@ -1,0 +1,33 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.6.10'
+    id 'application'
+}
+
+group 'io.github.devrawr'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+
+    maven {
+        url 'https://jitpack.io'
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+
+    implementation "io.ktor:ktor-server-core:$ktor_version"
+    implementation "io.ktor:ktor-server-netty:$ktor_version"
+    implementation "io.ktor:ktor-html-builder:$ktor_version"
+    implementation "io.ktor:ktor-freemarker:$ktor_version"
+    implementation "ch.qos.logback:logback-classic:$logback_version"
+
+    implementation 'com.github.devrawr:honey:05323c5f96'
+    implementation 'com.google.code.gson:gson:2.8.7'
+}
+
+application {
+    mainClass = 'io.github.cstringdev.ApplicationKt'
+    applicationDefaultJvmArgs = ["-Dio.ktor.development=true"]
+}

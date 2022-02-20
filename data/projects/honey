@@ -1,0 +1,10 @@
+{
+    "name":"honey",
+    "displayName":"honey",
+    "description":"a simple data storage wrapper for kotlin, targeting to support most big databases",
+    "github":true,
+    "tags": [
+        "kotlin",
+        "%git_version%"
+    ]
+}

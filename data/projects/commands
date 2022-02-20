@@ -1,0 +1,10 @@
+{
+    "name":"commands",
+    "displayName":"commands",
+    "description":"simple work in progress command framework",
+    "github":true,
+    "tags": [
+        "kotlin",
+        "%git_version%"
+    ]
+}

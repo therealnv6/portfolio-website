@@ -1,0 +1,9 @@
+{
+    "name":"project-list",
+    "displayName":"Project List",
+    "description":"a list of projects I'm working on - a more in-depth version of this list.",
+    "github":true,
+    "tags": [
+        "no-code"
+    ]
+}

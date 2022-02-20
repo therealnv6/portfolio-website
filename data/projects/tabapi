@@ -1,0 +1,10 @@
+{
+    "name":"TabAPI",
+    "displayName":"Tab API",
+    "description":"An outdated, simple, opensource, work in progress Tablist API.",
+    "github":true,
+    "tags": [
+        "java",
+        "unmaintained"
+    ]
+}
