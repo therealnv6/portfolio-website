@@ -41,7 +41,7 @@
                     programming languages, operating systems, kernels, data, physics, and everything in between (however I hate, and suck at, designing).
                     I've been programming ever since I was 10, and have since made many unique projects.
                     In the past I've worked with many different technologies, 
-                    such as <a href="spigotmc.org">Spigot</a>, <a href="https://wiki.archlinux.org/title/xorg">Xorg</a>,
+                    such as <a href="https://spigotmc.org">Spigot</a>, <a href="https://wiki.archlinux.org/title/xorg">Xorg</a>,
                     <a href="https://www.mongodb.com/">MongoDB</a>, <a href="https://redis.io/">Redis</a>, and many more.
                 </p> 
             </div>
