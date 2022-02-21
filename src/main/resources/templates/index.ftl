@@ -6,13 +6,43 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     </head>
 
-    <#--  <nav class="navbar is-dark">  -->
-        <#--  <div class="navbar-brand">  -->
-            <#--  <a class="navbar-item">  -->
-                <#--  <p style="max-height: 70px; font-size: 25px" class="py-4 px-4">cstring</p>  -->
-            <#--  </a>  -->
-        <#--  </div>  -->
-    <#--  </nav>  -->
+    <nav class="navbar is-dark">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <p style="max-height: 70px; font-size: 25px" class="py-4 px-4">cstring</p>
+            </a>
+        </div>
+
+        <div class="navbar-end">
+            <#if loggedIn>
+                <a class="navbar-link">
+                    ${user.username}
+                </a>
+
+                <div class="navbar-dropdown is-boxed">
+                    <a class="navbar-item" href="logout">
+                        Logout
+                    </a>
+                </div>
+            </#if>
+
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a href="/register">
+                        <div class="button is-primary">
+                            <strong>Sign up</strong>
+                        </div>
+                    </a>
+
+                    <a href="/login">
+                        <div class="button is-light">
+                            Log in
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <section class="hero is-dark is-medium">
         <div class="hero-body">
@@ -87,6 +117,12 @@
                 <div class="column is-6">
                     <h1 style="margin-top: 200px" class="is-size-1 py-6 title">Projects</h1>
                     <h2 class="subtitle">This is a list of projects I've previously worked on, or am still working on. These are the most mentiontionable projects and/or famous projects.</h2>        
+                
+                    <#if admin>
+                        <a href="/addproject">
+                            <button class="button is-info">Add Project</button>
+                        </a>
+                    </#if>
                 </div>
             </div>
         </div>
@@ -99,7 +135,7 @@
             <article class="media">
                 <figure class="media-left">
                     <p class="image is-64x64">
-                        <img src="${experience.logo}">
+                        <img src="${experience.logo}">  
                     </p>
                 </figure>        
                 <div class="media-content">
