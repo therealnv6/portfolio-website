@@ -15,21 +15,23 @@
 
         <div class="navbar-end">
             <#if loggedIn>
-                <a class="navbar-link">
-                    ${user.username}
-                </a>
-
-                <div class="navbar-dropdown is-boxed">
-                    <a class="navbar-item" href="logout">
-                        Logout
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="">
+                        <p class="is-danger">${user.username}</p>
                     </a>
+
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="logout">
+                            Logout
+                        </a>
+                    </div>
                 </div>
             </#if>
 
             <div class="navbar-item">
                 <div class="buttons">
                     <a href="/register">
-                        <div class="button is-primary">
+                        <div class="button is-primary" style="margin-right: 10px">
                             <strong>Sign up</strong>
                         </div>
                     </a>
